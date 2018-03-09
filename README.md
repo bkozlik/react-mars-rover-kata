@@ -27,16 +27,12 @@ npm install
 npm start
 ```
 
-
-### Executing with docker
-
+Alternately, generate static files and copy to a web server or S3 bucket for hosting
 ```
-cd /opt/
-git clone https://github.com/bkozlik/react-mars-rover-kata
-cd /opt/react-mars-rover-kata
-docker build -t react-mars-rover-kata .
-docker run -p 3000:3000 -d react-mars-rover-kata
+npm run build
+copy build/* /path/to/your/webserver/www
 ```
+
 
 ### Usage
 Navigate to the URL where the code is hosted and play around.
